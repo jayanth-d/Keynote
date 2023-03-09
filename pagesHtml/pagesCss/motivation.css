@@ -1,0 +1,305 @@
+/* landing page */
+.headImg{
+    width: 100%;
+}
+.headImg>img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: 2px 30%;
+}
+.heading{
+    text-align: center;
+    padding: 8%;
+}
+.heading>h1{
+    font-size: 5rem;
+    font-weight: 300;
+}
+/* end of landing page */
+
+
+/* options section */
+.hide{
+    display: none;
+}
+
+.options{
+    padding: 0 10% 10%;
+    margin-top: 20px;
+}
+.row{
+    display: flex;
+    column-gap: 5%;
+    margin-bottom: 70px;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    width: 30%;
+}
+.img-head{
+    width: 100%;
+}
+.img-head img{
+    width: 100%;
+}
+
+.img-head h3{
+    margin: 20px 0;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.column p{
+    font-size: 1rem;
+}
+.contactMe{
+    width: 40%;
+}
+
+
+
+/* Mian display */
+
+html{
+    scroll-behavior: smooth;
+}
+
+.mainDisplay{
+    width: 80%;
+    overflow: hidden;
+    margin: 0 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.none{
+    display: none;
+}
+
+.mainDisplay>div{
+    width: 45%;
+}
+.mainDisplay>div>img{
+    width: 100%
+}
+.mainDisplay>div>h3{
+    text-align: center;
+    background-color: lightgrey;
+    margin: 20px 0;
+    font-size: 2rem;
+    font-weight: 400;
+}
+.mainDisplay>div>p{
+    display: block;
+    font-size: 1.1rem;
+}
+
+.open{
+    animation-name: openAnimadesk1;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    
+}
+
+.close{
+    animation-name: closeAnimadesk1;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes openAnimadesk1{
+    from{height: 0px;
+         width: 0px;
+    }
+    to{
+       width: 80%;
+       height: 900px;
+       margin-bottom: 50px;
+    }
+}
+
+@keyframes closeAnimadesk1{
+    from{
+        width: 80%;
+        height: 900px;
+    }
+    to{
+        height: 0px;
+        width: 0px;
+        margin-bottom: 0;
+    }
+}
+
+@keyframes openAnima1250px{
+    from{height: 0px;
+         width: 0px;
+    }
+    to{
+       width: 80%;
+       height: 700px;
+       margin-bottom: 50px;
+    }
+}
+
+@keyframes closeAnima1250px{
+    from{
+        width: 80%;
+        height: 700px;
+    }
+    to{
+        height: 0px;
+        width: 0px;
+        margin-bottom: 0;
+    }
+}
+
+@keyframes openAnimamobile{
+    from{height: 0px;
+        width: 0px;
+   }
+   to{
+      width: 0px;
+      height: 0px;
+      margin-bottom: 0px;
+   }
+}
+
+@keyframes closeAnimamobile{
+    from{
+        width: 0px;
+        height: 0px;
+    }
+    to{
+        height: 0px;
+        width: 0px;
+        margin-bottom: 0;
+    }
+}
+
+
+@media(max-width:1250px){
+    .row{
+        display: flex;
+        column-gap: 0%;
+        justify-content: space-between;
+        margin-bottom: 70px;
+    }
+    .column{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        width: 33%;
+    }
+    .contactMe{
+        width: 60%;
+    }
+    .mainDisplay>div>p{
+        font-size: 1.01rem;
+    }
+    .open{
+        animation-name: openAnima1250px;
+        animation-duration: 1000ms;
+        animation-fill-mode: forwards;
+        
+    }
+    
+    .close{
+        animation-name: closeAnima1250px;
+        animation-duration: 1000ms;
+        animation-fill-mode: forwards;
+    }
+}
+
+@media(max-width:1050px){
+    .mainDisplay{
+        width: 80%;
+        flex-wrap: wrap;
+    }
+    
+    .mainDisplay>div{
+        width: 100%;
+        text-align: center;
+    }
+    .mainDisplay>div>img{
+        width: 50%
+    }
+    .open{
+        animation-name: openAnimadesk1;
+        animation-duration: 1000ms;
+        animation-fill-mode: forwards;
+        
+    }
+    .close{
+        animation-name: closeAnimadesk1;
+        animation-duration: 1000ms;
+        animation-fill-mode: forwards;
+    }    
+}
+
+@media (max-width:850px){
+    .row{
+        flex-direction: column;
+        row-gap: 70px;
+    }
+    .column{
+        width: 100%;
+    }
+    .img-head{
+        width: 100%;
+        text-align: center;
+    }
+    .img-head img{
+        width: 50%;
+    }
+    .desc{
+        text-align: center;
+    }
+    .open{
+        animation-name: openAnimamobile;
+        animation-duration: 0ms;
+        animation-fill-mode: forwards;
+        
+    }
+    
+    .close{
+        animation-name: closeAnimamobile;
+        animation-duration: 0ms;
+        animation-fill-mode: forwards;
+    }
+}
+
+@media(max-width:450px){
+    .landing{
+        position: relative;
+    }
+    .heading{
+        position: absolute;
+        top:0;
+        color: white;
+        height: 100%;
+        background-color: #00000059;
+        padding: 0;
+        padding-top: 120px;
+    }
+    .heading>h1{
+        font-size: 3rem;
+        font-weight: 400;
+    }
+    .headImg>img{
+        height: 400px;
+        object-position: 20% 30%;
+    }
+
+    .img-head img{
+        width: 80%;
+    }
+    
+}
+
+
+

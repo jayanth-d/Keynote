@@ -1,0 +1,409 @@
+
+
+.headImgDiv{
+    width: 100%;
+}
+.headImg{
+ width: 100%;
+}
+.landingDiv{
+    position: relative;
+    margin-bottom: 10%;
+    overflow: hidden;
+}
+.landingHeading{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    padding: 23% 0 20% 20%;
+    color: white;
+    background-color: #0000007a;
+}
+.landingHeading>h1{
+    font-size: 3.5rem;
+    margin: 4% 0 0;
+    position: relative;
+    right: 900px;
+}
+.landingHeading>p{
+    font-size: 1.2rem;
+    padding-right: 15%;
+    position: relative;
+    right: 700px;
+
+}
+.landingHeading>h4{
+    position: relative;
+    right: 700px;
+}
+/* section 2  */
+
+/* .cards-sec{
+    padding: 0 10% 10%;
+} */
+
+.oneRow{
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.spl{
+    flex-direction: row-reverse;
+}
+
+.image{
+    width: 50%;
+    background-color: black;
+    padding: 3% 9%;
+    position: relative;
+}
+
+.image>img{
+    width: 100%;
+}
+
+.desc{
+    width: 50%;
+    background-color: white;
+    padding: 0 9%;
+    position: relative;
+}
+.desc>h3{
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 6.5%;
+}
+.desc>p{
+    font-size: 1.22rem;
+}
+.learnMore{
+    width: 30%;
+    min-width: 150px;
+    font-size: 1.1rem;
+}
+.lineBtwOneRow{
+    display: none;
+    margin: 10% 10%;
+    width: 80%;
+}
+
+.animateLeft{
+    animation-name: left;
+    animation-duration: 1s;
+}
+.animateRight{
+    animation-name: right;
+    animation-duration: 1s;
+}
+.head4Anima{
+    animation-name: headingx;
+    animation-duration: 1500ms;
+    animation-fill-mode: forwards;
+}
+.head1Anima{
+    animation-name: headingx;
+    animation-duration: 1800ms;
+    animation-fill-mode: forwards;
+}
+.pAnima{
+    animation-name: headingx;
+    animation-duration: 2200ms;
+    animation-fill-mode: forwards;
+}
+.hranima{
+    animation-name: magic;
+    animation-duration: 1.5s;
+}
+
+/* blogs post */
+.blog{
+    padding:7%;
+    background-color: rgb(229 229 229);
+}
+.shortDec-blog{
+    text-align: center;
+    position: relative;
+    top: 230px;
+}
+.shortDec-blog>h1{
+    font-size: 3.5rem;
+}
+.shortDec-blog>p{
+    font-size: 1.2rem;
+    padding: 0.6% 0 2%;
+}
+.blogpostDiv{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5%;
+}
+.blogpost{
+    width: 30%;
+    position: relative;
+    top: 230px;
+}
+.blogpost, .blogpost:link, .blogpost:visited, .blogpost:hover, .blogpost:active{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.blogpost>img{
+    width: 100%;
+}
+.blogpost>h3{
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin-top: 5%;
+}
+
+.moveup{
+    animation-name: up;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.moveup0{
+    animation-name: up;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 200ms;
+}
+.moveup1{
+    animation-name: up;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 400ms;
+}
+.moveup2{
+    animation-name: up;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 600ms;
+}
+
+/* keyframes */
+
+@keyframes magic{
+    from{width : 0%;}
+    to{width : 80%;}
+}
+
+@keyframes left{
+    from{right: 100px;}
+    to{right:0;}
+}
+
+@keyframes right{
+    from{left : 100px;}
+    to{left : 0px;}
+}
+
+@keyframes headingx{
+    from{right: 700px;}
+    to{right:0px;}
+}
+
+@keyframes up{
+    from{
+        top:230px;
+    }
+    to{
+        top:0px
+    }
+}
+@keyframes upMobile{
+    from{
+        top:100px;
+    }
+    to{
+        top:0px
+    }
+}
+
+
+
+
+
+
+
+
+/* media */
+
+@media(max-width:1400px){
+    .landingHeading{
+        padding: 23% 0 20% 10%;
+    }
+}
+
+@media(max-width:1250px){
+    .landingHeading{
+        padding: 13% 0 20% 10%;
+    }
+    .landingHeading>h1{
+        font-size: 3rem;
+        margin: 4% 0 0;
+    }
+
+
+    /* sec2 */
+    .desc{
+        padding: 0 4% 0 4%;
+    }
+    .desc>h3{
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 6.5%;
+    }
+    .desc>p{
+        font-size: 1.06rem;
+    }
+
+    .blogpost>h3{
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-top: 5%;
+    }
+}
+
+@media(max-width:950px){
+    .landingHeading{
+        padding: 10% 0 20% 10%;
+    }
+    .landingHeading>h4{
+        font-size: 1.3rem;
+    }
+    .landingHeading>h1{
+        font-size: 2.5rem;
+    }
+
+    /* sec2 */
+    .desc>h3{
+        font-size: 1.5rem;
+        margin-bottom: 1.5%;
+    }
+    .desc>p{
+        font-size: 0.9rem;
+    }
+}
+
+@media(max-width:750px){
+    
+    .headImg{
+        height: 800px;
+        object-fit: cover;
+        object-position: 14%;
+    }
+    
+    .landingHeading{
+        padding: 30% 0 20% 10%;
+    }
+    .landingHeading>h1{
+        font-size: 3rem;
+        margin: 4% 0 0;
+    }
+    .landingHeading>h4{
+        font-size: 1.4rem;
+        margin-bottom: 8%;
+        font-weight: 400;
+    }
+    
+    
+    /* sec2 */
+   
+    .lineBtwOneRow{
+        display: block;
+    }
+    .oneRow{
+        flex-direction: column;
+        row-gap: 50px;
+    }
+    .image{
+        width: 80%;
+    }
+    .desc{
+        width: 80%;
+    }
+    .desc>h3{
+        font-size: 2.1rem;
+        margin-bottom: 6.5%;
+    }
+    .desc>p{
+        font-size: 1.07rem;
+    }
+
+    .blog{
+        margin-top: 50px;
+    }
+    .blogpostDiv{
+        row-gap: 100px;
+    }
+
+    .shortDec-blog{
+        top: 100px;
+    }
+    .blogpost{
+        text-align: center;
+        width: 100%;
+        top: 100px;
+    }
+    .blogpost>img{
+        width: 80%;
+    }
+    .blogpost>h3{
+        font-size: 1.75rem;
+        font-weight: 400;
+        margin-top: 1%;
+    }
+
+    .moveup0{
+        animation-name: upMobile;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-delay: 200ms;
+    }
+    .moveup1{
+        animation-name: upMobile;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-delay: 400ms;
+    }
+    .moveup2{
+        animation-name: upMobile;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-delay: 600ms;
+    }
+
+}
+
+@media(max-width : 450px){
+    .headImg{
+        object-position: 30%;
+    }
+    
+    .landingHeading{
+        padding: 55% 0 20% 10%;
+    }
+    .landingHeading>h1{
+        font-size: 2.1rem;
+        right: 700px;
+    }
+    .landingHeading>h4{
+        margin-bottom: 20%;
+    }
+    .landingHeading>p{
+        font-size: 1rem;
+    }
+
+    /* section 2 */
+
+    .desc>h3{
+        font-size: 1.5rem;
+    }
+    .desc>p{
+        font-size: 1rem;
+    }
+
+}

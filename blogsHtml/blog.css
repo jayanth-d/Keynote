@@ -1,0 +1,80 @@
+body{
+    padding: 10%
+}
+.heading-content{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 6%;
+    align-items: center;
+}
+
+.image-div{
+    width: 47%;
+}
+.image-div>img{
+    width: 100%;
+}
+
+.desc{
+    width: 47%;
+}
+.desc>h1{
+    font-size: 3rem;
+}
+.desc>p{
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+.text-div{
+    padding: 10% 0;
+}
+.text-div h1{
+    font-size: 3rem;
+}.text-div p{
+    font-size: 1.2rem;
+}
+.text-div li{
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.middle-text{
+    padding: 3% 0;
+}
+
+
+/* css only for blog 3 */
+.spl-blog3>div{
+    padding: 3% 0;
+}
+
+
+@media(max-width:1400px){
+    .desc>h1{
+        font-size: 2rem;
+    }
+    .desc>p{
+        font-size: 1rem;
+    }
+
+    .text-div li, .text-div p{
+        font-size: 1rem;
+    }
+
+    .text-div h1{
+        font-size: 2rem;
+    }
+}
+
+@media(max-width : 850px){
+    .image-div{
+        width: 100%;
+    }
+    .desc{
+        width: 100%;
+    }
+    .heading-content{
+        row-gap: 30px;
+    }
+}
